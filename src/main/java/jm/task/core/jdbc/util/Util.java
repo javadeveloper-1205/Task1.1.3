@@ -10,7 +10,6 @@ public class Util {
         Connection connection = null;
         try {
             connection = DriverManager.getConnection("jdbc:sqlite:/Users/grygoriyzhurylo/IdeaProjects/JM_PredProject/Task_1.1.3/test.db");
-            connection.close();
         } catch (SQLException e) {
             System.out.println("Something get wrong" + e.getMessage());
         }
